@@ -3,18 +3,30 @@
 
 <head>
   <title>F1 Tickets</title>
+  <style>
+    body,
+    html {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      /* Prevents scrolling on the main page */
+    }
+
+    iframe {
+      width: 100vw;
+      /* 100% of the viewport width */
+      height: 100vh;
+      /* 100% of the viewport height */
+      border: none;
+      /* Removes the default iframe border */
+    }
+  </style>
 </head>
 
 <body>
   <iframe
-    src="https://script.google.com/macros/s/AKfycbyXmvacl87-5FdrdFC9tl20ASyo7AIhk5rneWTNwlZ2sRx2hi79Lj2kEgET3dHZiMOFMQ/exec"
-    frameborder="0" width="100%" height="100%" allowfullscreen="true"></iframe>
-  <script>
-    window.onload = () => {
-      const iframe = document.querySelector('iframe');
-      iframe.requestFullscreen();
-    };
-  </script>
+    src="https://script.google.com/macros/s/AKfycbyXmvacl87-5FdrdFC9tl20ASyo7AIhk5rneWTNwlZ2sRx2hi79Lj2kEgET3dHZiMOFMQ/exec">
+  </iframe>
 </body>
 
 </html>
